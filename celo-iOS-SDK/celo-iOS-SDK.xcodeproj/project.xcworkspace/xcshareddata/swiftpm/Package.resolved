@@ -1,0 +1,122 @@
+{
+  "pins" : [
+    {
+      "identity" : "bigint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/attaswift/BigInt.git",
+      "state" : {
+        "revision" : "0ed110f7555c34ff468e72e1686e59721f2b0da6",
+        "version" : "5.3.0"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "039f56c5d7960f277087a0be51f5eb04ed0ec073",
+        "version" : "1.5.1"
+      }
+    },
+    {
+      "identity" : "handyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alibaba/HandyJSON.git",
+      "state" : {
+        "revision" : "dcf39cf062680ffa4fd0acb7f9117a97755c113f",
+        "version" : "5.0.2"
+      }
+    },
+    {
+      "identity" : "hanekeswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Haneke/HanekeSwift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a2e8e5b9a91eef90138a4f43c9a0044c4e90a6ef"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
+        "version" : "4.2.2"
+      }
+    },
+    {
+      "identity" : "promisekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/PromiseKit.git",
+      "state" : {
+        "revision" : "7b07b214dacecb22ca4b680531c7e981d52483f9",
+        "version" : "6.16.3"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "swiftentrykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/huri000/SwiftEntryKit.git",
+      "state" : {
+        "revision" : "5ad36cccf0c4b9fea32f4e9b17a8e38f07563ef0",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "swiftkeychainwrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jrendel/SwiftKeychainWrapper",
+      "state" : {
+        "revision" : "185a3165346a03767101c4f62e9a545a0fe0530f",
+        "version" : "4.0.1"
+      }
+    },
+    {
+      "identity" : "swiftyuserdefaults",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sunshinejr/SwiftyUserDefaults.git",
+      "state" : {
+        "revision" : "f66bcd04088582c8fbb5cb8554d577e303bae396",
+        "version" : "5.3.0"
+      }
+    },
+    {
+      "identity" : "wallet-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/trustwallet/wallet-core.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "45c0ff53e006505d651faccb081d7b038fc1e1c0"
+      }
+    },
+    {
+      "identity" : "walletconnectswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/WalletConnect/WalletConnectSwift.git",
+      "state" : {
+        "revision" : "e0bbfd16d5c54a7aa7e316956d765399c6332fa2",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "web3swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/web3swift-team/web3swift.git",
+      "state" : {
+        "revision" : "4312a7178e1255c3ef65ac909657d29f6dd81bb6",
+        "version" : "2.6.6"
+      }
+    }
+  ],
+  "version" : 2
+}

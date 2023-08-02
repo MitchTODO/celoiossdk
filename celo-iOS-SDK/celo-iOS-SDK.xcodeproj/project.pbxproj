@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		307627212A78361400E44EF6 /* celo_iOS_SDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 307627202A78361400E44EF6 /* celo_iOS_SDK.docc */; };
+		307627272A78361400E44EF6 /* celo_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076271C2A78361400E44EF6 /* celo_iOS_SDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Required, ); }; };
+		3076272C2A78361400E44EF6 /* celo_iOS_SDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076272B2A78361400E44EF6 /* celo_iOS_SDKTests.swift */; };
+		3076272D2A78361400E44EF6 /* celo_iOS_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3076271F2A78361400E44EF6 /* celo_iOS_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3076273B2A78378100E44EF6 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 3076273A2A78378100E44EF6 /* web3swift */; settings = {ATTRIBUTES = (Required, ); }; };
+		3076273D2A78389200E44EF6 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076273C2A78389200E44EF6 /* test.swift */; };
+		30EC6DD32A783F78009A0905 /* StableTokenWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6D9A2A783F77009A0905 /* StableTokenWrapper.swift */; };
+		30EC6DD42A783F78009A0905 /* ContractKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6D9C2A783F77009A0905 /* ContractKit.swift */; };
+		30EC6DD52A783F78009A0905 /* CeloContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6D9D2A783F77009A0905 /* CeloContract.swift */; };
+		30EC6DD62A783F78009A0905 /* ContractKitOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6D9E2A783F77009A0905 /* ContractKitOptions.swift */; };
+		30EC6DD72A783F78009A0905 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA02A783F77009A0905 /* Date.swift */; };
+		30EC6DD82A783F78009A0905 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA12A783F77009A0905 /* UIView.swift */; };
+		30EC6DD92A783F78009A0905 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA22A783F77009A0905 /* Array.swift */; };
+		30EC6DDA2A783F78009A0905 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA32A783F77009A0905 /* Data.swift */; };
+		30EC6DDB2A783F78009A0905 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA42A783F77009A0905 /* UIColor.swift */; };
+		30EC6DDC2A783F78009A0905 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA52A783F77009A0905 /* NSObject.swift */; };
+		30EC6DDD2A783F78009A0905 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA62A783F77009A0905 /* Int.swift */; };
+		30EC6DDE2A783F78009A0905 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA72A783F77009A0905 /* String.swift */; };
+		30EC6DDF2A783F78009A0905 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA82A783F77009A0905 /* UIImage.swift */; };
+		30EC6DE02A783F78009A0905 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DA92A783F77009A0905 /* Double.swift */; };
+		30EC6DE12A783F78009A0905 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DAA2A783F77009A0905 /* CGRect.swift */; };
+		30EC6DE22A783F78009A0905 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DAB2A783F77009A0905 /* BigInt.swift */; };
+		30EC6DE32A783F78009A0905 /* GasPriceMinimumWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DAD2A783F77009A0905 /* GasPriceMinimumWrapper.swift */; };
+		30EC6DE42A783F78009A0905 /* RawSigninTransactionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DAF2A783F77009A0905 /* RawSigninTransactionHelper.swift */; };
+		30EC6DE52A783F78009A0905 /* CeloTransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB02A783F77009A0905 /* CeloTransactionManager.swift */; };
+		30EC6DE62A783F78009A0905 /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB12A783F77009A0905 /* EthereumTransaction.swift */; };
+		30EC6DE72A783F78009A0905 /* CeloWalletCoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB32A783F78009A0905 /* CeloWalletCoreManager.swift */; };
+		30EC6DE82A783F78009A0905 /* CeloSDK+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB42A783F78009A0905 /* CeloSDK+Account.swift */; };
+		30EC6DE92A783F78009A0905 /* ERC20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB52A783F78009A0905 /* ERC20.swift */; };
+		30EC6DEA2A783F78009A0905 /* CryptTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB62A783F78009A0905 /* CryptTools.swift */; };
+		30EC6DEB2A783F78009A0905 /* RawTransactionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB72A783F78009A0905 /* RawTransactionHandler.swift */; };
+		30EC6DEC2A783F78009A0905 /* CeloSDK+Keystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB82A783F78009A0905 /* CeloSDK+Keystore.swift */; };
+		30EC6DED2A783F78009A0905 /* CeloWalletStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DB92A783F78009A0905 /* CeloWalletStruct.swift */; };
+		30EC6DEE2A783F78009A0905 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DBA2A783F78009A0905 /* Account.swift */; };
+		30EC6DEF2A783F78009A0905 /* CeloSDK+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DBB2A783F78009A0905 /* CeloSDK+Network.swift */; };
+		30EC6DF02A783F78009A0905 /* AddressRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DBD2A783F78009A0905 /* AddressRegistry.swift */; };
+		30EC6DF12A783F78009A0905 /* registry_contracts.json in Resources */ = {isa = PBXBuildFile; fileRef = 30EC6DBE2A783F78009A0905 /* registry_contracts.json */; };
+		30EC6DF22A783F78009A0905 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DBF2A783F78009A0905 /* Parser.swift */; };
+		30EC6DF32A783F78009A0905 /* SDKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC12A783F78009A0905 /* SDKUtils.swift */; };
+		30EC6DF42A783F78009A0905 /* WrapperCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC22A783F78009A0905 /* WrapperCache.swift */; };
+		30EC6DF52A783F78009A0905 /* AttestationCompleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC32A783F78009A0905 /* AttestationCompleter.swift */; };
+		30EC6DF62A783F78009A0905 /* AttestationRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC42A783F78009A0905 /* AttestationRequester.swift */; };
+		30EC6DF72A783F78009A0905 /* ODISSaltUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC52A783F78009A0905 /* ODISSaltUtil.swift */; };
+		30EC6DF82A783F78009A0905 /* AttestationsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC62A783F78009A0905 /* AttestationsWrapper.swift */; };
+		30EC6DF92A783F78009A0905 /* SelectiveCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC72A783F78009A0905 /* SelectiveCall.swift */; };
+		30EC6DFA2A783F78009A0905 /* CELOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DC82A783F78009A0905 /* CELOError.swift */; };
+		30EC6DFB2A783F78009A0905 /* CeloSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DCA2A783F78009A0905 /* CeloSDK.swift */; };
+		30EC6DFC2A783F78009A0905 /* CeloError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DCB2A783F78009A0905 /* CeloError.swift */; };
+		30EC6DFD2A783F78009A0905 /* CeloUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DCD2A783F78009A0905 /* CeloUtils.swift */; };
+		30EC6DFE2A783F78009A0905 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DCE2A783F78009A0905 /* GCD.swift */; };
+		30EC6DFF2A783F78009A0905 /* KaychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DCF2A783F78009A0905 /* KaychainHelper.swift */; };
+		30EC6E002A783F78009A0905 /* CeloConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DD02A783F78009A0905 /* CeloConstants.swift */; };
+		30EC6E012A783F78009A0905 /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DD12A783F78009A0905 /* HUDManager.swift */; };
+		30EC6E022A783F78009A0905 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6DD22A783F78009A0905 /* UIApplication.swift */; };
+		30EC6E052A783F8B009A0905 /* AttestationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6E032A783F8B009A0905 /* AttestationTest.swift */; };
+		30EC6E062A783F8B009A0905 /* BalanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC6E042A783F8B009A0905 /* BalanceTest.swift */; };
+		30EC6E082A783FAF009A0905 /* Browser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 30EC6E072A783FAF009A0905 /* Browser.bundle */; };
+		30EC6E0B2A7840A4009A0905 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E0A2A7840A4009A0905 /* KeychainAccess */; };
+		30EC6E0E2A784115009A0905 /* HandyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E0D2A784115009A0905 /* HandyJSON */; };
+		30EC6E112A78417A009A0905 /* WalletConnectSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E102A78417A009A0905 /* WalletConnectSwift */; };
+		30EC6E142A7841BD009A0905 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E132A7841BD009A0905 /* SwiftKeychainWrapper */; };
+		30EC6E182A78451E009A0905 /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E172A78451E009A0905 /* SwiftyUserDefaults */; };
+		30EC6E1E2A7846B0009A0905 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E1D2A7846B0009A0905 /* SwiftProtobuf */; };
+		30EC6E202A7846B0009A0905 /* WalletCore in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E1F2A7846B0009A0905 /* WalletCore */; };
+		30EC6E232A78471B009A0905 /* SwiftEntryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E222A78471B009A0905 /* SwiftEntryKit */; };
+		30EC6E292A784983009A0905 /* Haneke in Frameworks */ = {isa = PBXBuildFile; productRef = 30EC6E282A784983009A0905 /* Haneke */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		307627282A78361400E44EF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307627132A78361400E44EF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3076271B2A78361400E44EF6;
+			remoteInfo = "celo-iOS-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3076271C2A78361400E44EF6 /* celo_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = celo_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3076271F2A78361400E44EF6 /* celo_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = celo_iOS_SDK.h; sourceTree = "<group>"; };
+		307627202A78361400E44EF6 /* celo_iOS_SDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = celo_iOS_SDK.docc; sourceTree = "<group>"; };
+		307627262A78361400E44EF6 /* celo-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "celo-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3076272B2A78361400E44EF6 /* celo_iOS_SDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celo_iOS_SDKTests.swift; sourceTree = "<group>"; };
+		3076273C2A78389200E44EF6 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		30EC6D9A2A783F77009A0905 /* StableTokenWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StableTokenWrapper.swift; sourceTree = "<group>"; };
+		30EC6D9C2A783F77009A0905 /* ContractKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractKit.swift; sourceTree = "<group>"; };
+		30EC6D9D2A783F77009A0905 /* CeloContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloContract.swift; sourceTree = "<group>"; };
+		30EC6D9E2A783F77009A0905 /* ContractKitOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractKitOptions.swift; sourceTree = "<group>"; };
+		30EC6DA02A783F77009A0905 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		30EC6DA12A783F77009A0905 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		30EC6DA22A783F77009A0905 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		30EC6DA32A783F77009A0905 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		30EC6DA42A783F77009A0905 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		30EC6DA52A783F77009A0905 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		30EC6DA62A783F77009A0905 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		30EC6DA72A783F77009A0905 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		30EC6DA82A783F77009A0905 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		30EC6DA92A783F77009A0905 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		30EC6DAA2A783F77009A0905 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		30EC6DAB2A783F77009A0905 /* BigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		30EC6DAD2A783F77009A0905 /* GasPriceMinimumWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasPriceMinimumWrapper.swift; sourceTree = "<group>"; };
+		30EC6DAF2A783F77009A0905 /* RawSigninTransactionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawSigninTransactionHelper.swift; sourceTree = "<group>"; };
+		30EC6DB02A783F77009A0905 /* CeloTransactionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloTransactionManager.swift; sourceTree = "<group>"; };
+		30EC6DB12A783F77009A0905 /* EthereumTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
+		30EC6DB32A783F78009A0905 /* CeloWalletCoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloWalletCoreManager.swift; sourceTree = "<group>"; };
+		30EC6DB42A783F78009A0905 /* CeloSDK+Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CeloSDK+Account.swift"; sourceTree = "<group>"; };
+		30EC6DB52A783F78009A0905 /* ERC20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERC20.swift; sourceTree = "<group>"; };
+		30EC6DB62A783F78009A0905 /* CryptTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptTools.swift; sourceTree = "<group>"; };
+		30EC6DB72A783F78009A0905 /* RawTransactionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawTransactionHandler.swift; sourceTree = "<group>"; };
+		30EC6DB82A783F78009A0905 /* CeloSDK+Keystore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CeloSDK+Keystore.swift"; sourceTree = "<group>"; };
+		30EC6DB92A783F78009A0905 /* CeloWalletStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloWalletStruct.swift; sourceTree = "<group>"; };
+		30EC6DBA2A783F78009A0905 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		30EC6DBB2A783F78009A0905 /* CeloSDK+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CeloSDK+Network.swift"; sourceTree = "<group>"; };
+		30EC6DBD2A783F78009A0905 /* AddressRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressRegistry.swift; sourceTree = "<group>"; };
+		30EC6DBE2A783F78009A0905 /* registry_contracts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = registry_contracts.json; sourceTree = "<group>"; };
+		30EC6DBF2A783F78009A0905 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		30EC6DC12A783F78009A0905 /* SDKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKUtils.swift; sourceTree = "<group>"; };
+		30EC6DC22A783F78009A0905 /* WrapperCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrapperCache.swift; sourceTree = "<group>"; };
+		30EC6DC32A783F78009A0905 /* AttestationCompleter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttestationCompleter.swift; sourceTree = "<group>"; };
+		30EC6DC42A783F78009A0905 /* AttestationRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttestationRequester.swift; sourceTree = "<group>"; };
+		30EC6DC52A783F78009A0905 /* ODISSaltUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODISSaltUtil.swift; sourceTree = "<group>"; };
+		30EC6DC62A783F78009A0905 /* AttestationsWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttestationsWrapper.swift; sourceTree = "<group>"; };
+		30EC6DC72A783F78009A0905 /* SelectiveCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectiveCall.swift; sourceTree = "<group>"; };
+		30EC6DC82A783F78009A0905 /* CELOError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CELOError.swift; sourceTree = "<group>"; };
+		30EC6DCA2A783F78009A0905 /* CeloSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloSDK.swift; sourceTree = "<group>"; };
+		30EC6DCB2A783F78009A0905 /* CeloError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloError.swift; sourceTree = "<group>"; };
+		30EC6DCD2A783F78009A0905 /* CeloUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloUtils.swift; sourceTree = "<group>"; };
+		30EC6DCE2A783F78009A0905 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		30EC6DCF2A783F78009A0905 /* KaychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaychainHelper.swift; sourceTree = "<group>"; };
+		30EC6DD02A783F78009A0905 /* CeloConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeloConstants.swift; sourceTree = "<group>"; };
+		30EC6DD12A783F78009A0905 /* HUDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
+		30EC6DD22A783F78009A0905 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		30EC6E032A783F8B009A0905 /* AttestationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttestationTest.swift; sourceTree = "<group>"; };
+		30EC6E042A783F8B009A0905 /* BalanceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTest.swift; sourceTree = "<group>"; };
+		30EC6E072A783FAF009A0905 /* Browser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Browser.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		307627192A78361400E44EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EC6E292A784983009A0905 /* Haneke in Frameworks */,
+				30EC6E0E2A784115009A0905 /* HandyJSON in Frameworks */,
+				30EC6E182A78451E009A0905 /* SwiftyUserDefaults in Frameworks */,
+				30EC6E0B2A7840A4009A0905 /* KeychainAccess in Frameworks */,
+				30EC6E142A7841BD009A0905 /* SwiftKeychainWrapper in Frameworks */,
+				30EC6E202A7846B0009A0905 /* WalletCore in Frameworks */,
+				30EC6E232A78471B009A0905 /* SwiftEntryKit in Frameworks */,
+				30EC6E112A78417A009A0905 /* WalletConnectSwift in Frameworks */,
+				30EC6E1E2A7846B0009A0905 /* SwiftProtobuf in Frameworks */,
+				3076273B2A78378100E44EF6 /* web3swift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307627232A78361400E44EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307627272A78361400E44EF6 /* celo_iOS_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		307627122A78361400E44EF6 = {
+			isa = PBXGroup;
+			children = (
+				30EC6E242A7848B1009A0905 /* Packages */,
+				30EC6E072A783FAF009A0905 /* Browser.bundle */,
+				3076271E2A78361400E44EF6 /* celo-iOS-SDK */,
+				3076272A2A78361400E44EF6 /* celo-iOS-SDKTests */,
+				3076271D2A78361400E44EF6 /* Products */,
+				307627392A78378100E44EF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3076271D2A78361400E44EF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3076271C2A78361400E44EF6 /* celo_iOS_SDK.framework */,
+				307627262A78361400E44EF6 /* celo-iOS-SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3076271E2A78361400E44EF6 /* celo-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DC02A783F78009A0905 /* Attestation */,
+				30EC6DC92A783F78009A0905 /* CeloSDK */,
+				30EC6D9B2A783F77009A0905 /* Contract */,
+				30EC6D9F2A783F77009A0905 /* Extensions */,
+				30EC6DAC2A783F77009A0905 /* GasPriceMinimum */,
+				30EC6DBC2A783F78009A0905 /* Registry */,
+				30EC6D992A783F77009A0905 /* StableToken */,
+				30EC6DAE2A783F77009A0905 /* Transaction */,
+				30EC6DCC2A783F78009A0905 /* Utils */,
+				30EC6DB22A783F78009A0905 /* Wallet */,
+				3076271F2A78361400E44EF6 /* celo_iOS_SDK.h */,
+				307627202A78361400E44EF6 /* celo_iOS_SDK.docc */,
+				3076273C2A78389200E44EF6 /* test.swift */,
+			);
+			path = "celo-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		3076272A2A78361400E44EF6 /* celo-iOS-SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6E032A783F8B009A0905 /* AttestationTest.swift */,
+				30EC6E042A783F8B009A0905 /* BalanceTest.swift */,
+				3076272B2A78361400E44EF6 /* celo_iOS_SDKTests.swift */,
+			);
+			path = "celo-iOS-SDKTests";
+			sourceTree = "<group>";
+		};
+		307627392A78378100E44EF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30EC6D992A783F77009A0905 /* StableToken */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6D9A2A783F77009A0905 /* StableTokenWrapper.swift */,
+			);
+			path = StableToken;
+			sourceTree = "<group>";
+		};
+		30EC6D9B2A783F77009A0905 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6D9C2A783F77009A0905 /* ContractKit.swift */,
+				30EC6D9D2A783F77009A0905 /* CeloContract.swift */,
+				30EC6D9E2A783F77009A0905 /* ContractKitOptions.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		30EC6D9F2A783F77009A0905 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DA02A783F77009A0905 /* Date.swift */,
+				30EC6DA12A783F77009A0905 /* UIView.swift */,
+				30EC6DA22A783F77009A0905 /* Array.swift */,
+				30EC6DA32A783F77009A0905 /* Data.swift */,
+				30EC6DA42A783F77009A0905 /* UIColor.swift */,
+				30EC6DA52A783F77009A0905 /* NSObject.swift */,
+				30EC6DA62A783F77009A0905 /* Int.swift */,
+				30EC6DA72A783F77009A0905 /* String.swift */,
+				30EC6DA82A783F77009A0905 /* UIImage.swift */,
+				30EC6DA92A783F77009A0905 /* Double.swift */,
+				30EC6DAA2A783F77009A0905 /* CGRect.swift */,
+				30EC6DAB2A783F77009A0905 /* BigInt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30EC6DAC2A783F77009A0905 /* GasPriceMinimum */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DAD2A783F77009A0905 /* GasPriceMinimumWrapper.swift */,
+			);
+			path = GasPriceMinimum;
+			sourceTree = "<group>";
+		};
+		30EC6DAE2A783F77009A0905 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DAF2A783F77009A0905 /* RawSigninTransactionHelper.swift */,
+				30EC6DB02A783F77009A0905 /* CeloTransactionManager.swift */,
+				30EC6DB12A783F77009A0905 /* EthereumTransaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		30EC6DB22A783F78009A0905 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DB32A783F78009A0905 /* CeloWalletCoreManager.swift */,
+				30EC6DB42A783F78009A0905 /* CeloSDK+Account.swift */,
+				30EC6DB52A783F78009A0905 /* ERC20.swift */,
+				30EC6DB62A783F78009A0905 /* CryptTools.swift */,
+				30EC6DB72A783F78009A0905 /* RawTransactionHandler.swift */,
+				30EC6DB82A783F78009A0905 /* CeloSDK+Keystore.swift */,
+				30EC6DB92A783F78009A0905 /* CeloWalletStruct.swift */,
+				30EC6DBA2A783F78009A0905 /* Account.swift */,
+				30EC6DBB2A783F78009A0905 /* CeloSDK+Network.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		30EC6DBC2A783F78009A0905 /* Registry */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DBD2A783F78009A0905 /* AddressRegistry.swift */,
+				30EC6DBE2A783F78009A0905 /* registry_contracts.json */,
+				30EC6DBF2A783F78009A0905 /* Parser.swift */,
+			);
+			path = Registry;
+			sourceTree = "<group>";
+		};
+		30EC6DC02A783F78009A0905 /* Attestation */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DC12A783F78009A0905 /* SDKUtils.swift */,
+				30EC6DC22A783F78009A0905 /* WrapperCache.swift */,
+				30EC6DC32A783F78009A0905 /* AttestationCompleter.swift */,
+				30EC6DC42A783F78009A0905 /* AttestationRequester.swift */,
+				30EC6DC52A783F78009A0905 /* ODISSaltUtil.swift */,
+				30EC6DC62A783F78009A0905 /* AttestationsWrapper.swift */,
+				30EC6DC72A783F78009A0905 /* SelectiveCall.swift */,
+				30EC6DC82A783F78009A0905 /* CELOError.swift */,
+			);
+			path = Attestation;
+			sourceTree = "<group>";
+		};
+		30EC6DC92A783F78009A0905 /* CeloSDK */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DCA2A783F78009A0905 /* CeloSDK.swift */,
+				30EC6DCB2A783F78009A0905 /* CeloError.swift */,
+			);
+			path = CeloSDK;
+			sourceTree = "<group>";
+		};
+		30EC6DCC2A783F78009A0905 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30EC6DCD2A783F78009A0905 /* CeloUtils.swift */,
+				30EC6DCE2A783F78009A0905 /* GCD.swift */,
+				30EC6DCF2A783F78009A0905 /* KaychainHelper.swift */,
+				30EC6DD02A783F78009A0905 /* CeloConstants.swift */,
+				30EC6DD12A783F78009A0905 /* HUDManager.swift */,
+				30EC6DD22A783F78009A0905 /* UIApplication.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		30EC6E242A7848B1009A0905 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		307627172A78361400E44EF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3076272D2A78361400E44EF6 /* celo_iOS_SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3076271B2A78361400E44EF6 /* celo-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307627302A78361400E44EF6 /* Build configuration list for PBXNativeTarget "celo-iOS-SDK" */;
+			buildPhases = (
+				307627172A78361400E44EF6 /* Headers */,
+				307627182A78361400E44EF6 /* Sources */,
+				307627192A78361400E44EF6 /* Frameworks */,
+				3076271A2A78361400E44EF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "celo-iOS-SDK";
+			packageProductDependencies = (
+				3076273A2A78378100E44EF6 /* web3swift */,
+				30EC6E0A2A7840A4009A0905 /* KeychainAccess */,
+				30EC6E0D2A784115009A0905 /* HandyJSON */,
+				30EC6E102A78417A009A0905 /* WalletConnectSwift */,
+				30EC6E132A7841BD009A0905 /* SwiftKeychainWrapper */,
+				30EC6E172A78451E009A0905 /* SwiftyUserDefaults */,
+				30EC6E1D2A7846B0009A0905 /* SwiftProtobuf */,
+				30EC6E1F2A7846B0009A0905 /* WalletCore */,
+				30EC6E222A78471B009A0905 /* SwiftEntryKit */,
+				30EC6E282A784983009A0905 /* Haneke */,
+			);
+			productName = "celo-iOS-SDK";
+			productReference = 3076271C2A78361400E44EF6 /* celo_iOS_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		307627252A78361400E44EF6 /* celo-iOS-SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307627332A78361400E44EF6 /* Build configuration list for PBXNativeTarget "celo-iOS-SDKTests" */;
+			buildPhases = (
+				307627222A78361400E44EF6 /* Sources */,
+				307627232A78361400E44EF6 /* Frameworks */,
+				307627242A78361400E44EF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307627292A78361400E44EF6 /* PBXTargetDependency */,
+			);
+			name = "celo-iOS-SDKTests";
+			productName = "celo-iOS-SDKTests";
+			productReference = 307627262A78361400E44EF6 /* celo-iOS-SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		307627132A78361400E44EF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3076271B2A78361400E44EF6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					307627252A78361400E44EF6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 307627162A78361400E44EF6 /* Build configuration list for PBXProject "celo-iOS-SDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 307627122A78361400E44EF6;
+			packageReferences = (
+				307627362A7836BB00E44EF6 /* XCRemoteSwiftPackageReference "web3swift" */,
+				30EC6E092A7840A4009A0905 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				30EC6E0C2A784115009A0905 /* XCRemoteSwiftPackageReference "HandyJSON" */,
+				30EC6E0F2A78417A009A0905 /* XCRemoteSwiftPackageReference "WalletConnectSwift" */,
+				30EC6E122A7841BD009A0905 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				30EC6E162A78451E009A0905 /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				30EC6E1C2A7846B0009A0905 /* XCRemoteSwiftPackageReference "wallet-core" */,
+				30EC6E212A78471B009A0905 /* XCRemoteSwiftPackageReference "SwiftEntryKit" */,
+				30EC6E272A784983009A0905 /* XCRemoteSwiftPackageReference "HanekeSwift" */,
+			);
+			productRefGroup = 3076271D2A78361400E44EF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3076271B2A78361400E44EF6 /* celo-iOS-SDK */,
+				307627252A78361400E44EF6 /* celo-iOS-SDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3076271A2A78361400E44EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EC6DF12A783F78009A0905 /* registry_contracts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307627242A78361400E44EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EC6E082A783FAF009A0905 /* Browser.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		307627182A78361400E44EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EC6DFC2A783F78009A0905 /* CeloError.swift in Sources */,
+				30EC6DFF2A783F78009A0905 /* KaychainHelper.swift in Sources */,
+				30EC6DE92A783F78009A0905 /* ERC20.swift in Sources */,
+				30EC6DFA2A783F78009A0905 /* CELOError.swift in Sources */,
+				30EC6DD92A783F78009A0905 /* Array.swift in Sources */,
+				30EC6DF32A783F78009A0905 /* SDKUtils.swift in Sources */,
+				30EC6DDD2A783F78009A0905 /* Int.swift in Sources */,
+				30EC6DEC2A783F78009A0905 /* CeloSDK+Keystore.swift in Sources */,
+				30EC6E022A783F78009A0905 /* UIApplication.swift in Sources */,
+				30EC6DE42A783F78009A0905 /* RawSigninTransactionHelper.swift in Sources */,
+				30EC6DF92A783F78009A0905 /* SelectiveCall.swift in Sources */,
+				30EC6DEE2A783F78009A0905 /* Account.swift in Sources */,
+				30EC6DF82A783F78009A0905 /* AttestationsWrapper.swift in Sources */,
+				30EC6DEF2A783F78009A0905 /* CeloSDK+Network.swift in Sources */,
+				30EC6DE52A783F78009A0905 /* CeloTransactionManager.swift in Sources */,
+				30EC6DE02A783F78009A0905 /* Double.swift in Sources */,
+				30EC6DE82A783F78009A0905 /* CeloSDK+Account.swift in Sources */,
+				30EC6DFE2A783F78009A0905 /* GCD.swift in Sources */,
+				30EC6DDA2A783F78009A0905 /* Data.swift in Sources */,
+				30EC6DED2A783F78009A0905 /* CeloWalletStruct.swift in Sources */,
+				30EC6DD82A783F78009A0905 /* UIView.swift in Sources */,
+				30EC6DE32A783F78009A0905 /* GasPriceMinimumWrapper.swift in Sources */,
+				30EC6DDE2A783F78009A0905 /* String.swift in Sources */,
+				30EC6DF02A783F78009A0905 /* AddressRegistry.swift in Sources */,
+				30EC6DD32A783F78009A0905 /* StableTokenWrapper.swift in Sources */,
+				30EC6DFB2A783F78009A0905 /* CeloSDK.swift in Sources */,
+				30EC6DEB2A783F78009A0905 /* RawTransactionHandler.swift in Sources */,
+				30EC6DEA2A783F78009A0905 /* CryptTools.swift in Sources */,
+				30EC6DDF2A783F78009A0905 /* UIImage.swift in Sources */,
+				30EC6DF62A783F78009A0905 /* AttestationRequester.swift in Sources */,
+				30EC6DE72A783F78009A0905 /* CeloWalletCoreManager.swift in Sources */,
+				30EC6DE22A783F78009A0905 /* BigInt.swift in Sources */,
+				30EC6DD62A783F78009A0905 /* ContractKitOptions.swift in Sources */,
+				30EC6DF42A783F78009A0905 /* WrapperCache.swift in Sources */,
+				30EC6DF22A783F78009A0905 /* Parser.swift in Sources */,
+				30EC6DD72A783F78009A0905 /* Date.swift in Sources */,
+				307627212A78361400E44EF6 /* celo_iOS_SDK.docc in Sources */,
+				30EC6DDB2A783F78009A0905 /* UIColor.swift in Sources */,
+				30EC6DD42A783F78009A0905 /* ContractKit.swift in Sources */,
+				30EC6DDC2A783F78009A0905 /* NSObject.swift in Sources */,
+				30EC6E012A783F78009A0905 /* HUDManager.swift in Sources */,
+				30EC6DD52A783F78009A0905 /* CeloContract.swift in Sources */,
+				30EC6DFD2A783F78009A0905 /* CeloUtils.swift in Sources */,
+				30EC6E002A783F78009A0905 /* CeloConstants.swift in Sources */,
+				30EC6DF52A783F78009A0905 /* AttestationCompleter.swift in Sources */,
+				30EC6DF72A783F78009A0905 /* ODISSaltUtil.swift in Sources */,
+				30EC6DE12A783F78009A0905 /* CGRect.swift in Sources */,
+				3076273D2A78389200E44EF6 /* test.swift in Sources */,
+				30EC6DE62A783F78009A0905 /* EthereumTransaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307627222A78361400E44EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EC6E062A783F8B009A0905 /* BalanceTest.swift in Sources */,
+				30EC6E052A783F8B009A0905 /* AttestationTest.swift in Sources */,
+				3076272C2A78361400E44EF6 /* celo_iOS_SDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		307627292A78361400E44EF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 3076271B2A78361400E44EF6 /* celo-iOS-SDK */;
+			targetProxy = 307627282A78361400E44EF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3076272E2A78361400E44EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3076272F2A78361400E44EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		307627312A78361400E44EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MOT.celo-iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		307627322A78361400E44EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MOT.celo-iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		307627342A78361400E44EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MOT.celo-iOS-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		307627352A78361400E44EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MOT.celo-iOS-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307627162A78361400E44EF6 /* Build configuration list for PBXProject "celo-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3076272E2A78361400E44EF6 /* Debug */,
+				3076272F2A78361400E44EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307627302A78361400E44EF6 /* Build configuration list for PBXNativeTarget "celo-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307627312A78361400E44EF6 /* Debug */,
+				307627322A78361400E44EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307627332A78361400E44EF6 /* Build configuration list for PBXNativeTarget "celo-iOS-SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307627342A78361400E44EF6 /* Debug */,
+				307627352A78361400E44EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		307627362A7836BB00E44EF6 /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.6.6;
+			};
+		};
+		30EC6E092A7840A4009A0905 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.2;
+			};
+		};
+		30EC6E0C2A784115009A0905 /* XCRemoteSwiftPackageReference "HandyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alibaba/HandyJSON.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.2;
+			};
+		};
+		30EC6E0F2A78417A009A0905 /* XCRemoteSwiftPackageReference "WalletConnectSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.7.0;
+			};
+		};
+		30EC6E122A7841BD009A0905 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.1;
+			};
+		};
+		30EC6E162A78451E009A0905 /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sunshinejr/SwiftyUserDefaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		30EC6E1C2A7846B0009A0905 /* XCRemoteSwiftPackageReference "wallet-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trustwallet/wallet-core.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		30EC6E212A78471B009A0905 /* XCRemoteSwiftPackageReference "SwiftEntryKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huri000/SwiftEntryKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		30EC6E272A784983009A0905 /* XCRemoteSwiftPackageReference "HanekeSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Haneke/HanekeSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3076273A2A78378100E44EF6 /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 307627362A7836BB00E44EF6 /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+		30EC6E0A2A7840A4009A0905 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E092A7840A4009A0905 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		30EC6E0D2A784115009A0905 /* HandyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E0C2A784115009A0905 /* XCRemoteSwiftPackageReference "HandyJSON" */;
+			productName = HandyJSON;
+		};
+		30EC6E102A78417A009A0905 /* WalletConnectSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E0F2A78417A009A0905 /* XCRemoteSwiftPackageReference "WalletConnectSwift" */;
+			productName = WalletConnectSwift;
+		};
+		30EC6E132A7841BD009A0905 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E122A7841BD009A0905 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		30EC6E172A78451E009A0905 /* SwiftyUserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E162A78451E009A0905 /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
+			productName = SwiftyUserDefaults;
+		};
+		30EC6E1D2A7846B0009A0905 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E1C2A7846B0009A0905 /* XCRemoteSwiftPackageReference "wallet-core" */;
+			productName = SwiftProtobuf;
+		};
+		30EC6E1F2A7846B0009A0905 /* WalletCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E1C2A7846B0009A0905 /* XCRemoteSwiftPackageReference "wallet-core" */;
+			productName = WalletCore;
+		};
+		30EC6E222A78471B009A0905 /* SwiftEntryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E212A78471B009A0905 /* XCRemoteSwiftPackageReference "SwiftEntryKit" */;
+			productName = SwiftEntryKit;
+		};
+		30EC6E282A784983009A0905 /* Haneke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30EC6E272A784983009A0905 /* XCRemoteSwiftPackageReference "HanekeSwift" */;
+			productName = Haneke;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 307627132A78361400E44EF6 /* Project object */;
+}
